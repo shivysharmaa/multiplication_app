@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(98, 17, 191);
+    font-family: cursive;
+
+    animation: full 5s linear none infinite alternate;
+}
+@keyframes full {
+    0%   {background-color:yellow; left:0px; top:0px;}
+    25%  {background-color:rgb(13, 13, 9); left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+form{
+    background-color: rgb(253, 249, 249);
+    padding: 20px;
+    box-shadow:0 4px 8px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    margin: 10px;
+    z-index: 10;
+}
+.input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    border: solid 4px green;
+    color: green;
+}
+.input::placeholder{
+    color:lightgray;
+    font-family: cursive;
+}
+.buttons{
+    display: flex;
+
+    
+}
+#restart{
+    background-color: rgb(14, 169, 189);
+    color: white;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: cursive;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    cursor: pointer;
+
+}
+.btn{
+    background-color: green;
+    color: white;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: cursive;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    margin-right: 15px ;
+    /* animation: myfirst 5s linear 2s infinite alternate; */
+}
+
+/* For animations*/
+/* @keyframes myfirst {
+    0%   {background-color:green; left:0px; top:0px;}
+    25%  {background-color:rgb(13, 13, 9); left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  } */
+.btn:hover{
+    filter: brightness(0.9);
+}
+.score{
+    color: rgb(4, 49, 19);
+    text-align: right;
+}
+
+
+/*for videp*/
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: .3;
+    z-index: 8;
+  }
+

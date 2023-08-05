@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiplicationApp</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="https://player.vimeo.com/external/350442134.sd.mp4?s=65afd8dfce2c2894026b4a7e006f8cad9d996c37&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+      </video>
+    <form class="form" id="form">
+        <h4 id="score" class="score">score : 0</h4>
+        <h1 id = "question">What is 1 multiply by 1?</h1>
+        <input placeholder="Enter your answer"type="text" class="input" id="input" autofocus autocomplete="off">
+        <div class="buttons">
+            <button type="submit" class="btn" id="btn">Submit</button>
+        <button type="reset" id="restart" onclick="clearResult()">Restart</button>
+        </div>
+        
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
